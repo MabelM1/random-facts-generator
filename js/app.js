@@ -15,7 +15,6 @@ function randomNumber() {
 }
 
 function handleErrors(response) {
-	console.log('response',response)
 	if(!response.ok) {
 		throw new Error((response.status + ' ' + response.statusText))
 	}
@@ -23,7 +22,6 @@ function handleErrors(response) {
 }
 
 function updateUISuccess(data) {	
-	console.log('data', data)
 	triviaField.textContent = data.text
 }
 
